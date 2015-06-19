@@ -18,6 +18,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -26,13 +27,13 @@ import java.io.InputStream;
 public class PMPActivity extends ActionBarActivity {
 
     private PMPListAdapter mAdapter;
-    private LinearLayoutManager mLayoutManager,mCategoryLayoutManager;
+    private LinearLayoutManager mLayoutManager, mCategoryLayoutManager;
     private Toolbar toolbar;
     private MenuItem mMenuItemSearch;
-
+    private RecyclerView pmpList;
     private SearchView mSearchView;
-    String TITLES[] = {"Home","Shop by Category","Wallet","YES2YOU Rewards","Account", "Lists", "Registries", "Deals & Coupos", "Store Locator"};
-    int ICONS[] = {R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu};
+    String TITLES[] = {"Home", "Shop by Category", "Wallet", "YES2YOU Rewards", "Account", "Lists", "Registries", "Deals & Coupos", "Store Locator"};
+    int ICONS[] = {R.drawable.ic_menu, R.drawable.ic_menu, R.drawable.ic_menu, R.drawable.ic_menu, R.drawable.ic_menu, R.drawable.ic_menu, R.drawable.ic_menu, R.drawable.ic_menu, R.drawable.ic_menu};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,16 +44,17 @@ public class PMPActivity extends ActionBarActivity {
         setSupportActionBar(toolbar);
 
         final RecyclerView categoryList = (RecyclerView) findViewById(R.id.category_list);
-        ImageView shoppingBag = (ImageView)findViewById(R.id.shopping_bag);
+        ImageView shoppingBag = (ImageView) findViewById(R.id.shopping_bag);
 
         shoppingBag.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PMPActivity.this, "Coming soon", Toast.LENGTH_SHORT).show();
+                // TODO this code will never be called as on Touch is implemented
+                Toast.makeText(PMPActivity.this, "Coming soon..", Toast.LENGTH_SHORT).show();
             }
         });
 
-        MultiTouchListener touchListener=new MultiTouchListener(this);
+        MultiTouchListener touchListener = new MultiTouchListener(this);
         shoppingBag.setOnTouchListener(touchListener);
 
         categoryList.setAdapter(new CategoryAdapter(TITLES, ICONS));
@@ -80,7 +82,7 @@ public class PMPActivity extends ActionBarActivity {
         Drawer.setDrawerListener(mDrawerToggle); // Drawer Listener set to the Drawer toggle
         mDrawerToggle.syncState();
 
-        final RecyclerView pmpList = (RecyclerView) findViewById(R.id.pmp_list);
+        pmpList = (RecyclerView) findViewById(R.id.pmp_list);
         mLayoutManager = new LinearLayoutManager(this);
         pmpList.setLayoutManager(mLayoutManager);
         pmpList.setHasFixedSize(true);
@@ -90,7 +92,7 @@ public class PMPActivity extends ActionBarActivity {
         JSONParsingHelper helper = new JSONParsingHelper(ProductMatrixVO.class, new JSONParsingHelper.IJSONParsingListener() {
             @Override
             public void onParseSuccess(IValueObject valueObject) {
-                mAdapter = new PMPListAdapter(PMPActivity.this, ((ProductMatrixVO)valueObject).getPayload().getProducts());
+                mAdapter = new PMPListAdapter(PMPActivity.this, ((ProductMatrixVO) valueObject).getPayload().getProducts());
                 pmpList.setAdapter(mAdapter);
 
             }
@@ -163,5 +165,19 @@ public class PMPActivity extends ActionBarActivity {
 
         Log.v("TAG", "Text File: " + text);
         return text;
+    }
+
+    public void onAddToBackClick(View shoppingBagView) {
+        // Get the center point of the shoppingbag icon view
+        int top = shoppingBagView.getTop()-(shoppingBagView.getHeight()/2);
+        // Find view from Recycleview which is at given position
+        // Change X coordinate as per requirement/give the center coordinate of the screen
+        View v = pmpList.findChildViewUnder((shoppingBagView.getRight()+200)/2,top);
+        // Get postion of the given view
+        int position = pmpList.getChildPosition(v);
+
+        Toast.makeText(PMPActivity.this, "Item Position" + position + "\nItem Title : "+((TextView) v.findViewById(R.id.title)).getText(), Toast.LENGTH_SHORT).show();
+
+
     }
 }
