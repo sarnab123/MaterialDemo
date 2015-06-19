@@ -179,4 +179,6 @@ public class PMPListAdapter extends RecyclerView.Adapter<PMPListAdapter.ViewHold
         }
         return mProductsList.size();
     }
+
+
 }

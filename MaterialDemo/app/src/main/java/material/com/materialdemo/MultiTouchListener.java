@@ -7,22 +7,22 @@ import android.view.ViewGroup.MarginLayoutParams;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
-public class MultiTouchListener implements OnTouchListener
-{
+public class MultiTouchListener implements OnTouchListener {
 
     private float mPrevX;
     private float mPrevY;
 
     public PMPActivity mainActivity;
+
     public MultiTouchListener(PMPActivity mainActivity1) {
         mainActivity = mainActivity1;
     }
 
     @Override
     public boolean onTouch(View view, MotionEvent event) {
-        float currX,currY;
+        float currX, currY;
         int action = event.getAction();
-        switch (action ) {
+        switch (action) {
             case MotionEvent.ACTION_DOWN: {
 
                 mPrevX = event.getX();
@@ -30,15 +30,14 @@ public class MultiTouchListener implements OnTouchListener
                 break;
             }
 
-            case MotionEvent.ACTION_MOVE:
-            {
+            case MotionEvent.ACTION_MOVE: {
 
                 currX = event.getRawX();
                 currY = event.getRawY();
 
 
                 MarginLayoutParams marginParams = new MarginLayoutParams(view.getLayoutParams());
-                marginParams.setMargins((int)(currX - mPrevX), (int)(currY - mPrevY),0, 0);
+                marginParams.setMargins((int) (currX - mPrevX), (int) (currY - mPrevY), 0, 0);
                 FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(marginParams);
                 view.setLayoutParams(layoutParams);
 
@@ -47,12 +46,12 @@ public class MultiTouchListener implements OnTouchListener
             }
 
 
-
             case MotionEvent.ACTION_CANCEL:
                 break;
 
             case MotionEvent.ACTION_UP:
-                Toast.makeText(mainActivity, "Coming soon", Toast.LENGTH_SHORT).show();
+                mainActivity.onAddToBackClick(view);
+               // Toast.makeText(mainActivity, "Coming soon", Toast.LENGTH_SHORT).show();
                 break;
         }
 
