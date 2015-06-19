@@ -1,0 +1,23 @@
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
++ FILE: /Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/src/main/java/material/com/materialdemo/PDPActivity.java  LOC: 124  VISITED: 64/89 SYMOPS: 560
++  num_procs: 11 (10 ok, 0 timeouts, 1 errors, 0 warnings, 31 infos)
++  detail procs:
++    - No Errors and No Specs: 0
++    - Some Errors and No Specs: 1
++    - No Errors and Some Specs: 10
++    - Some Errors and Some Specs: 0
++  errors:  NULL_DEREFERENCE:1
++  warnings: 
++  infos:  SKIP_FUNCTION:31
++  specs: 10
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Detailed errors during footprint phase:
+/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/src/main/java/material/com/materialdemo/PDPActivity.java:43: ERROR: NULL_DEREFERENCE [B1] object categoryList last assigned on line 42 could be null and is dereferenced at line 43
+
+Detailed errors during re-execution phase:
+
+Detailed warnings during footprint phase:
+
+Detailed warnings during re-execution phase:

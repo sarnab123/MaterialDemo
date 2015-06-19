@@ -1,0 +1,23 @@
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
++ FILE: /Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/generated/source/buildConfig/debug/material/com/materialdemo/BuildConfig.java  LOC: 13  VISITED: 12/14 SYMOPS: 134
++  num_procs: 4 (3 ok, 0 timeouts, 0 errors, 0 warnings, 2 infos)
++  detail procs:
++    - No Errors and No Specs: 1
++    - Some Errors and No Specs: 0
++    - No Errors and Some Specs: 3
++    - Some Errors and Some Specs: 0
++  errors: 
++  warnings: 
++  infos:  SKIP_FUNCTION:2
++  specs: 3
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Detailed errors during footprint phase:
+
+Detailed errors during re-execution phase:
+
+Detailed warnings during footprint phase:
+
+Detailed warnings during re-execution phase:
+/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/infer-out/sources/material.com.materialdemo.PMPActivity_InferGeneratedHarness.java:8: WARNING: PRECONDITION_NOT_MET in call to onCreate(...) at line 8, column 1

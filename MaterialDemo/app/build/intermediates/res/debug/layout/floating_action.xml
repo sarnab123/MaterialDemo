@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floating_icon"
+    android:layout_width="@dimen/diamenter"
+    android:layout_height="@dimen/diamenter"
+    android:padding="8dp"
+    android:layout_gravity="end|bottom"
+    android:layout_marginBottom="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/oval_ripple"
+    android:elevation="@dimen/elevation_low"
+    android:src="@drawable/shopping_bag"
+    android:stateListAnimator="@anim/button_elevation"
+     /><!-- From: file:/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/src/main/res/layout/floating_action.xml -->

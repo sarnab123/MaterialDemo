@@ -1,0 +1,22 @@
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
++ FILE: /Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/generated/source/r/debug/material/com/materialdemo/R.java  LOC: 6362  VISITED: 180/221 SYMOPS: 1506
++  num_procs: 43 (41 ok, 2 timeouts, 0 errors, 0 warnings, 0 infos)
++  detail procs:
++    - No Errors and No Specs: 2
++    - Some Errors and No Specs: 0
++    - No Errors and Some Specs: 41
++    - Some Errors and Some Specs: 0
++  errors: 
++  warnings: 
++  infos: 
++  specs: 41
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Detailed errors during footprint phase:
+
+Detailed errors during re-execution phase:
+
+Detailed warnings during footprint phase:
+
+Detailed warnings during re-execution phase:

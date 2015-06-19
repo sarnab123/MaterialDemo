@@ -1,0 +1,22 @@
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
++ FILE: /Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/src/main/java/material/com/materialdemo/ProductMatrixVO.java  LOC: 945  VISITED: 651/829 SYMOPS: 3542
++  num_procs: 178 (178 ok, 0 timeouts, 0 errors, 0 warnings, 0 infos)
++  detail procs:
++    - No Errors and No Specs: 0
++    - Some Errors and No Specs: 0
++    - No Errors and Some Specs: 178
++    - Some Errors and Some Specs: 0
++  errors: 
++  warnings: 
++  infos: 
++  specs: 178
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Detailed errors during footprint phase:
+
+Detailed errors during re-execution phase:
+
+Detailed warnings during footprint phase:
+
+Detailed warnings during re-execution phase:

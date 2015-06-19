@@ -1,0 +1,550 @@
+
+#### Start: Footprint Computation for BuildConfig.<init>() ####
+Adding summary for Object.<init>()
+  void Object.<init>()(class java.lang.Object *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.001864 s TIMEOUT:N SYMOPS:10 CALLS:295,0
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited: 30] ---------------------------
+  PRE:
+  this = val$1:
+  POST 1 of 1:
+  this = val$1: ; 
+  return = val$2:
+  ----------------------------------------------------------------
+  
+#### [FUNCTION BuildConfig.<init>()] ... OK #####
+#### Finished: Footprint Computation for BuildConfig.<init>() (5 nodes containing 4 states) ####
+#### [FUNCTION BuildConfig.<init>()] Footprint Analysis result ####
+PROP 1:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 4
+n4(s1).n10(s2).n11(s3).n5]
+old_this = @f$0: ; 
+return = _t$0:
+[footprint
+   this = @f$0:  ]
+
+Specs changed: added new pre
+this = val$1:
+Adding summary for BuildConfig.<init>()
+  void BuildConfig.<init>()(class material.com.materialdemo.BuildConfig *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: FOOTRPRINT
+  Dependency_map: 
+  TIME:0.004924 s TIMEOUT:N SYMOPS:15 CALLS:0,1
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited: 6] ---------------------------
+  PRE:
+  this = val$1:
+  POST 1 of 1:
+  this = val$1: ; 
+  return = val$2:
+  ----------------------------------------------------------------
+  
+Transition BuildConfig.<init>() from footprint to re-exe
+Adding summary for BuildConfig.<init>()
+  void BuildConfig.<init>()(class material.com.materialdemo.BuildConfig *this)
+  Timestamp: 0
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.004924 s TIMEOUT:N SYMOPS:15 CALLS:0,1
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited:] ---------------------------
+  PRE:
+  this = val$1:
+  
+  ----------------------------------------------------------------
+  
+
+#### Start: Re-Execution for BuildConfig.<init>() ####
+Finished re-execution for precondition 1 (5 nodes containing 4 states) (pass)
+#### [FUNCTION BuildConfig.<init>()] ... OK #####
+#### Finished: Re-Execution for BuildConfig.<init>() ####
+
+
+================================================
+ *** CANDIDATE PRECONDITIONS FOR BuildConfig.<init>(): 
+================================================
+
+PROP 1:
+this = val$1: 
+
+
+
+================================================
+ *** VALID PRECONDITIONS FOR BuildConfig.<init>(): 
+================================================
+
+PROP 1:
+this = val$1: 
+
+Specs changed: added new post
+PROP 1 of 1:
+return = val$2:
+Adding summary for BuildConfig.<init>()
+  void BuildConfig.<init>()(class material.com.materialdemo.BuildConfig *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.005616 s TIMEOUT:N SYMOPS:30 CALLS:0,1
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited: 6] ---------------------------
+  PRE:
+  this = val$1:
+  POST 1 of 1:
+  this = val$1: ; 
+  return = val$2:
+  ----------------------------------------------------------------
+  
+
+#### Start: Footprint Computation for material.com.materialdemo.PMPActivity.InferGeneratedHarness() ####
+Adding summary for PMPActivity.<init>()
+  void PMPActivity.<init>()(class material.com.materialdemo.PMPActivity *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.050475 s TIMEOUT:N SYMOPS:158 CALLS:0,1
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited: 26 34 35] ---------------------------
+  PRE:
+  this = val$1: ;
+  this|->{material.com.materialdemo.PMPActivity.ICONS:val$2, material.com.materialdemo.PMPActivity.TITLES:val$3}:
+  POST 1 of 1:
+  MEMna<new[]:34>(val$6) ;  MEMna<new[]:35>(val$5) ;
+  this = val$1: ; 
+  return = val$4: ;
+  this|->{material.com.materialdemo.PMPActivity.ICONS:val$5, material.com.materialdemo.PMPActivity.TITLES:val$6}: ; 
+  val$5|->[9|]: ; 
+  val$6|->[9|]:
+  ----------------------------------------------------------------
+  
+Adding summary for void PMPActivity.onCreate(Bundle)
+  void void PMPActivity.onCreate(Bundle)(class material.com.materialdemo.PMPActivity *this, class android.os.Bundle *savedInstanceState)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: PMPActivity$1.<init>(PMPActivity)=0 PMPActivity$2.<init>(PMPActivity,Activity,DrawerLayout,Toolbar,int,int)=0 PMPActivity$3.<init>(PMPActivity,RecyclerView)=0 String PMPActivity.getPMPResponse()=0 
+  TIME:0.452139 s TIMEOUT:N SYMOPS:229 CALLS:0,33
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited:] ---------------------------
+  PRE:
+  val$14 != 0 ;  val$13 != 0 ;  val$12 != 0 ;  val$11 != 0 ;  val$10 != 0 ;  val$9 != 0 ;
+  this = val$1: ; 
+  savedInstanceState = val$6: ; 
+  #GB$material.com.materialdemo.PMPActivity.InferGeneratedHarness() = {android.view.View$OnClickListener[line 48]:val$7, material.com.materialdemo.MultiTouchListener[line 56]:val$8}: ;
+  this|->{material.com.materialdemo.PMPActivity.ICONS:val$2, material.com.materialdemo.PMPActivity.TITLES:val$3, material.com.materialdemo.PMPActivity.mCategoryLayoutManager:val$4, material.com.materialdemo.PMPActivity.mLayoutManager:val$5}:
+  
+  ----------------------------------------------------------------
+  
+#### [FUNCTION material.com.materialdemo.PMPActivity.InferGeneratedHarness()] ... OK #####
+#### Finished: Footprint Computation for material.com.materialdemo.PMPActivity.InferGeneratedHarness() (3 nodes containing 3 states) ####
+#### [FUNCTION material.com.materialdemo.PMPActivity.InferGeneratedHarness()] Footprint Analysis result ####
+PROP 1:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 15
+(P1{P2})(s2).n16where
+P1 = n17(s1).n15
+P2 = n33(s27).n52(s28).n53(s29).n54(s30).n55(s31).n56(s32).n57(s33).n58(s34).n59(s35).n60(s36).n61(s37).n62(s38).n63(s39).n64(s40).n65(s41).n66(s42).n67(s43).n68(s44).n69(s45).n70(s46).n71(s47).n72(s48).n73(s49).n74(s50).n75(s51).n34
+]
+0 != 0 ;
+
+[footprint
+   #GB$material.com.materialdemo.PMPActivity.InferGeneratedHarness() = {android.view.View$OnClickListener[line 48]:@f$0, material.com.materialdemo.MultiTouchListener[line 56]:@f$1}: ; 
+   PMPActivity = @f$2: ; 
+   Bundle = @f$3:  ]
+
+Specs changed: added new pre
+#GB$material.com.materialdemo.PMPActivity.InferGeneratedHarness() = {android.view.View$OnClickListener[line 48]:val$1, material.com.materialdemo.MultiTouchListener[line 56]:val$2}: ; 
+PMPActivity = val$3: ; 
+Bundle = val$4:
+Adding summary for material.com.materialdemo.PMPActivity.InferGeneratedHarness()
+  void material.com.materialdemo.PMPActivity.InferGeneratedHarness()()
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: FOOTRPRINT
+  Dependency_map: 
+  TIME:0.008362 s TIMEOUT:N SYMOPS:13 CALLS:0,6
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20] ---------------------------
+  PRE:
+  #GB$material.com.materialdemo.PMPActivity.InferGeneratedHarness() = {android.view.View$OnClickListener[line 48]:val$1, material.com.materialdemo.MultiTouchListener[line 56]:val$2}: ; 
+  PMPActivity = val$3: ; 
+  Bundle = val$4:
+  
+  ----------------------------------------------------------------
+  
+Transition material.com.materialdemo.PMPActivity.InferGeneratedHarness() from footprint to re-exe
+Adding summary for material.com.materialdemo.PMPActivity.InferGeneratedHarness()
+  void material.com.materialdemo.PMPActivity.InferGeneratedHarness()()
+  Timestamp: 0
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.008362 s TIMEOUT:N SYMOPS:13 CALLS:0,6
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited:] ---------------------------
+  PRE:
+  #GB$material.com.materialdemo.PMPActivity.InferGeneratedHarness() = {android.view.View$OnClickListener[line 48]:val$1, material.com.materialdemo.MultiTouchListener[line 56]:val$2}: ; 
+  PMPActivity = val$3: ; 
+  Bundle = val$4:
+  
+  ----------------------------------------------------------------
+  
+
+#### Start: Re-Execution for material.com.materialdemo.PMPActivity.InferGeneratedHarness() ####
+Finished re-execution for precondition 1 (3 nodes containing 2 states) (fail)
+#### [FUNCTION material.com.materialdemo.PMPActivity.InferGeneratedHarness()] ... OK #####
+#### Finished: Re-Execution for material.com.materialdemo.PMPActivity.InferGeneratedHarness() ####
+
+
+================================================
+ *** CANDIDATE PRECONDITIONS FOR material.com.materialdemo.PMPActivity.InferGeneratedHarness(): 
+================================================
+
+PROP 1:
+#GB$material.com.materialdemo.PMPActivity.InferGeneratedHarness() = {android.view.View$OnClickListener[line 48]:val$1, material.com.materialdemo.MultiTouchListener[line 56]:val$2}: ; 
+PMPActivity = val$3: ; 
+Bundle = val$4: 
+
+
+
+================================================
+ *** VALID PRECONDITIONS FOR material.com.materialdemo.PMPActivity.InferGeneratedHarness(): 
+================================================
+
+ 
+
+Specs changed: removing pre of spec
+--------------------------- ---------- ---------------------------
+PRE:
+#GB$material.com.materialdemo.PMPActivity.InferGeneratedHarness() = {android.view.View$OnClickListener[line 48]:val$1, material.com.materialdemo.MultiTouchListener[line 56]:val$2}: ; 
+PMPActivity = val$3: ; 
+Bundle = val$4:
+
+----------------------------------------------------------------
+Adding summary for material.com.materialdemo.PMPActivity.InferGeneratedHarness()
+  void material.com.materialdemo.PMPActivity.InferGeneratedHarness()()
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.015454 s TIMEOUT:N SYMOPS:24 CALLS:0,6
+  ERRORS: 
+  
+
+#### Start: Footprint Computation for material.com.materialdemo.PDPActivity.InferGeneratedHarness() ####
+Adding summary for PDPActivity.<init>()
+  void PDPActivity.<init>()(class material.com.materialdemo.PDPActivity *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.048685 s TIMEOUT:N SYMOPS:158 CALLS:0,1
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited: 23 27 28] ---------------------------
+  PRE:
+  this = val$1: ;
+  this|->{material.com.materialdemo.PDPActivity.ICONS:val$2, material.com.materialdemo.PDPActivity.TITLES:val$3}:
+  POST 1 of 1:
+  MEMna<new[]:27>(val$6) ;  MEMna<new[]:28>(val$5) ;
+  this = val$1: ; 
+  return = val$4: ;
+  this|->{material.com.materialdemo.PDPActivity.ICONS:val$5, material.com.materialdemo.PDPActivity.TITLES:val$6}: ; 
+  val$5|->[9|]: ; 
+  val$6|->[9|]:
+  ----------------------------------------------------------------
+  
+Adding summary for void PDPActivity.onCreate(Bundle)
+  void void PDPActivity.onCreate(Bundle)(class material.com.materialdemo.PDPActivity *this, class android.os.Bundle *savedInstanceState)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: PDPActivity$1.<init>(PDPActivity,Activity,DrawerLayout,Toolbar,int,int)=0 void PDPActivity.colorize(Bitmap)=0 
+  TIME:0.039849 s TIMEOUT:N SYMOPS:63 CALLS:0,33
+  ERRORS: NULL_DEREFERENCE 
+  
+Adding summary for void PDPActivity.onStop()
+  void void PDPActivity.onStop()(class material.com.materialdemo.PDPActivity *this)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.008138 s TIMEOUT:N SYMOPS:24 CALLS:0,2
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited: 99 100 101] ---------------------------
+  PRE:
+  this = val$1: ;
+  this|->{}:
+  POST 1 of 1:
+  this = val$1: ; 
+  return = val$2: ;
+  this|->{}:
+  ----------------------------------------------------------------
+  
+#### [FUNCTION material.com.materialdemo.PDPActivity.InferGeneratedHarness()] ... OK #####
+#### Finished: Footprint Computation for material.com.materialdemo.PDPActivity.InferGeneratedHarness() (3 nodes containing 3 states) ####
+#### [FUNCTION material.com.materialdemo.PDPActivity.InferGeneratedHarness()] Footprint Analysis result ####
+PROP 1:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 12
+(P3{P4})(s2).n13where
+P1 = n14(s1).n12
+P2 = n17(s27).n41(s28).n42(s29).n43(s30).n44(s31).n45(s32).n46(s33).n47(s34).n48(s35).n49(s36).n50(s37).n51(s38).n52(s39).n53(s40).n54(s41).n55(s42).n56(s43).n57(s44).n58(s45).n59(s46).n60(s47).n61(s48).n62(s49).n63(s50).n64(s51).n18
+P4 = n23(s6).n99(s7).n100(s8).n101(s9).n24
+P3 = (P1{P2})
+]
+MEMna<PDPActivity.<init>():5>(_t$3) ;  MEMna<PDPActivity.<init>():5>(_t$2) ;
+return = _t$0: ; 
+PDPActivity = _t$1: ; 
+Bundle = _t$4: ;
+PDPActivity|->{android.app.Activity.mActionBar:0, android.app.Activity.mActivityInfo:0, android.app.Activity.mAllLoaderManagers:0, android.app.Activity.mApplication:0, android.app.Activity.mCalled:0, android.app.Activity.mChangeCanvasToTranslucent:0, android.app.Activity.mChangingConfigurations:0, android.app.Activity.mCheckedForLoaderManager:0, android.app.Activity.mComponent:0, android.app.Activity.mConfigChangeFlags:0, android.app.Activity.mContainer:0, android.app.Activity.mCurrentConfig:0, android.app.Activity.mDecor:0, android.app.Activity.mDefaultKeyMode:0, android.app.Activity.mDefaultKeySsb:0, android.app.Activity.mDestroyed:0, android.app.Activity.mDoReportFullyDrawn:0, android.app.Activity.mEmbeddedID:0, android.app.Activity.mEnableDefaultActionBarUp:0, android.app.Activity.mFinished:0, android.app.Activity.mFragments:0, android.app.Activity.mHandler:0, android.app.Activity.mIdent:0, android.app.Activity.mInstanceTracker:0, android.app.Activity.mInstrumentation:0, android.app.Activity.mIntent:0, android.app.Activity.mLastNonConfigurationInstances:0, android.app.Activity.mLoaderManager:0, android.app.Activity.mLoadersStarted:0, android.app.Activity.mMainThread:0, android.app.Activity.mManagedCursors:0, android.app.Activity.mManagedDialogs:0, android.app.Activity.mMenuInflater:0, android.app.Activity.mParent:0, android.app.Activity.mResultCode:0, android.app.Activity.mResultData:0, android.app.Activity.mResumed:0, android.app.Activity.mSearchManager:0, android.app.Activity.mStartedActivity:0, android.app.Activity.mStopped:0, android.app.Activity.mTemporaryPause:0, android.app.Activity.mTitle:0, android.app.Activity.mTitleColor:0, android.app.Activity.mTitleReady:0, android.app.Activity.mToken:0, android.app.Activity.mTranslucentCallback:0, android.app.Activity.mUiThread:0, android.app.Activity.mVisibleFromClient:0, android.app.Activity.mVisibleFromServer:0, android.app.Activity.mWindow:0, android.app.Activity.mWindowAdded:0, android.app.Activity.mWindowManager:0, android.content.ContextWrapper.mBase:0, android.support.v4.app.FragmentActivity.mAllLoaderManagers:0, android.support.v4.app.FragmentActivity.mCheckedForLoaderManager:0, android.support.v4.app.FragmentActivity.mContainer:0, android.support.v4.app.FragmentActivity.mCreated:0, android.support.v4.app.FragmentActivity.mFragments:0, android.support.v4.app.FragmentActivity.mHandler:0, android.support.v4.app.FragmentActivity.mLoaderManager:0, android.support.v4.app.FragmentActivity.mLoadersStarted:0, android.support.v4.app.FragmentActivity.mOptionsMenuInvalidated:0, android.support.v4.app.FragmentActivity.mReallyStopped:0, android.support.v4.app.FragmentActivity.mResumed:0, android.support.v4.app.FragmentActivity.mRetaining:0, android.support.v4.app.FragmentActivity.mStopped:0, android.support.v7.app.AppCompatActivity.mDelegate:0, android.view.ContextThemeWrapper.mBase:0, android.view.ContextThemeWrapper.mInflater:0, android.view.ContextThemeWrapper.mOverrideConfiguration:0, android.view.ContextThemeWrapper.mResources:0, android.view.ContextThemeWrapper.mTheme:0, android.view.ContextThemeWrapper.mThemeResource:0, material.com.materialdemo.PDPActivity.ICONS:_t$2, material.com.materialdemo.PDPActivity.TITLES:_t$3, material.com.materialdemo.PDPActivity.mCategoryLayoutManager:0, material.com.materialdemo.PDPActivity.toolbar:0}: ; 
+_t$2|->[9|]: ; 
+_t$3|->[9|]: ; 
+Bundle|->{android.os.Bundle.mAllowFds:0, android.os.Bundle.mClassLoader:0, android.os.Bundle.mFdsKnown:0, android.os.Bundle.mHasFds:0, android.os.Bundle.mMap:0, android.os.Bundle.mParcelledData:0}:
+[footprint
+   PDPActivity = @f$0: ; 
+   Bundle = @f$1:  ]
+
+Specs changed: added new pre
+PDPActivity = val$1: ; 
+Bundle = val$2:
+Adding summary for material.com.materialdemo.PDPActivity.InferGeneratedHarness()
+  void material.com.materialdemo.PDPActivity.InferGeneratedHarness()()
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: FOOTRPRINT
+  Dependency_map: 
+  TIME:0.009645 s TIMEOUT:N SYMOPS:19 CALLS:0,4
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited: 1 2 3 4 5 6 7 8 9 10] ---------------------------
+  PRE:
+  PDPActivity = val$1: ; 
+  Bundle = val$2:
+  POST 1 of 1:
+  MEMna<PDPActivity.<init>():5>(val$6) ;  MEMna<PDPActivity.<init>():5>(val$5) ;
+  return = val$3: ; 
+  PDPActivity = val$1: ; 
+  PDPActivity = val$4: ; 
+  Bundle = val$2: ; 
+  Bundle = val$7: ;
+  PDPActivity|->{android.app.Activity.mActionBar:0, android.app.Activity.mActivityInfo:0, android.app.Activity.mAllLoaderManagers:0, android.app.Activity.mApplication:0, android.app.Activity.mCalled:0, android.app.Activity.mChangeCanvasToTranslucent:0, android.app.Activity.mChangingConfigurations:0, android.app.Activity.mCheckedForLoaderManager:0, android.app.Activity.mComponent:0, android.app.Activity.mConfigChangeFlags:0, android.app.Activity.mContainer:0, android.app.Activity.mCurrentConfig:0, android.app.Activity.mDecor:0, android.app.Activity.mDefaultKeyMode:0, android.app.Activity.mDefaultKeySsb:0, android.app.Activity.mDestroyed:0, android.app.Activity.mDoReportFullyDrawn:0, android.app.Activity.mEmbeddedID:0, android.app.Activity.mEnableDefaultActionBarUp:0, android.app.Activity.mFinished:0, android.app.Activity.mFragments:0, android.app.Activity.mHandler:0, android.app.Activity.mIdent:0, android.app.Activity.mInstanceTracker:0, android.app.Activity.mInstrumentation:0, android.app.Activity.mIntent:0, android.app.Activity.mLastNonConfigurationInstances:0, android.app.Activity.mLoaderManager:0, android.app.Activity.mLoadersStarted:0, android.app.Activity.mMainThread:0, android.app.Activity.mManagedCursors:0, android.app.Activity.mManagedDialogs:0, android.app.Activity.mMenuInflater:0, android.app.Activity.mParent:0, android.app.Activity.mResultCode:0, android.app.Activity.mResultData:0, android.app.Activity.mResumed:0, android.app.Activity.mSearchManager:0, android.app.Activity.mStartedActivity:0, android.app.Activity.mStopped:0, android.app.Activity.mTemporaryPause:0, android.app.Activity.mTitle:0, android.app.Activity.mTitleColor:0, android.app.Activity.mTitleReady:0, android.app.Activity.mToken:0, android.app.Activity.mTranslucentCallback:0, android.app.Activity.mUiThread:0, android.app.Activity.mVisibleFromClient:0, android.app.Activity.mVisibleFromServer:0, android.app.Activity.mWindow:0, android.app.Activity.mWindowAdded:0, android.app.Activity.mWindowManager:0, android.content.ContextWrapper.mBase:0, android.support.v4.app.FragmentActivity.mAllLoaderManagers:0, android.support.v4.app.FragmentActivity.mCheckedForLoaderManager:0, android.support.v4.app.FragmentActivity.mContainer:0, android.support.v4.app.FragmentActivity.mCreated:0, android.support.v4.app.FragmentActivity.mFragments:0, android.support.v4.app.FragmentActivity.mHandler:0, android.support.v4.app.FragmentActivity.mLoaderManager:0, android.support.v4.app.FragmentActivity.mLoadersStarted:0, android.support.v4.app.FragmentActivity.mOptionsMenuInvalidated:0, android.support.v4.app.FragmentActivity.mReallyStopped:0, android.support.v4.app.FragmentActivity.mResumed:0, android.support.v4.app.FragmentActivity.mRetaining:0, android.support.v4.app.FragmentActivity.mStopped:0, android.support.v7.app.AppCompatActivity.mDelegate:0, android.view.ContextThemeWrapper.mBase:0, android.view.ContextThemeWrapper.mInflater:0, android.view.ContextThemeWrapper.mOverrideConfiguration:0, android.view.ContextThemeWrapper.mResources:0, android.view.ContextThemeWrapper.mTheme:0, android.view.ContextThemeWrapper.mThemeResource:0, material.com.materialdemo.PDPActivity.ICONS:val$5, material.com.materialdemo.PDPActivity.TITLES:val$6, material.com.materialdemo.PDPActivity.mCategoryLayoutManager:0, material.com.materialdemo.PDPActivity.toolbar:0}: ; 
+  val$5|->[9|]: ; 
+  val$6|->[9|]: ; 
+  Bundle|->{android.os.Bundle.mAllowFds:0, android.os.Bundle.mClassLoader:0, android.os.Bundle.mFdsKnown:0, android.os.Bundle.mHasFds:0, android.os.Bundle.mMap:0, android.os.Bundle.mParcelledData:0}:
+  ----------------------------------------------------------------
+  
+Transition material.com.materialdemo.PDPActivity.InferGeneratedHarness() from footprint to re-exe
+Adding summary for material.com.materialdemo.PDPActivity.InferGeneratedHarness()
+  void material.com.materialdemo.PDPActivity.InferGeneratedHarness()()
+  Timestamp: 0
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.009645 s TIMEOUT:N SYMOPS:19 CALLS:0,4
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited:] ---------------------------
+  PRE:
+  PDPActivity = val$1: ; 
+  Bundle = val$2:
+  
+  ----------------------------------------------------------------
+  
+
+#### Start: Re-Execution for material.com.materialdemo.PDPActivity.InferGeneratedHarness() ####
+Finished re-execution for precondition 1 (3 nodes containing 3 states) (pass)
+#### [FUNCTION material.com.materialdemo.PDPActivity.InferGeneratedHarness()] ... OK #####
+#### Finished: Re-Execution for material.com.materialdemo.PDPActivity.InferGeneratedHarness() ####
+
+
+================================================
+ *** CANDIDATE PRECONDITIONS FOR material.com.materialdemo.PDPActivity.InferGeneratedHarness(): 
+================================================
+
+PROP 1:
+PDPActivity = val$1: ; 
+Bundle = val$2: 
+
+
+
+================================================
+ *** VALID PRECONDITIONS FOR material.com.materialdemo.PDPActivity.InferGeneratedHarness(): 
+================================================
+
+PROP 1:
+PDPActivity = val$1: ; 
+Bundle = val$2: 
+
+Specs changed: added new post
+PROP 1 of 1:
+MEMna<PDPActivity.<init>():5>(val$6) ;  MEMna<PDPActivity.<init>():5>(val$5) ;
+return = val$3: ; 
+PDPActivity = val$4: ; 
+Bundle = val$7: ;
+PDPActivity|->{android.app.Activity.mActionBar:0, android.app.Activity.mActivityInfo:0, android.app.Activity.mAllLoaderManagers:0, android.app.Activity.mApplication:0, android.app.Activity.mCalled:0, android.app.Activity.mChangeCanvasToTranslucent:0, android.app.Activity.mChangingConfigurations:0, android.app.Activity.mCheckedForLoaderManager:0, android.app.Activity.mComponent:0, android.app.Activity.mConfigChangeFlags:0, android.app.Activity.mContainer:0, android.app.Activity.mCurrentConfig:0, android.app.Activity.mDecor:0, android.app.Activity.mDefaultKeyMode:0, android.app.Activity.mDefaultKeySsb:0, android.app.Activity.mDestroyed:0, android.app.Activity.mDoReportFullyDrawn:0, android.app.Activity.mEmbeddedID:0, android.app.Activity.mEnableDefaultActionBarUp:0, android.app.Activity.mFinished:0, android.app.Activity.mFragments:0, android.app.Activity.mHandler:0, android.app.Activity.mIdent:0, android.app.Activity.mInstanceTracker:0, android.app.Activity.mInstrumentation:0, android.app.Activity.mIntent:0, android.app.Activity.mLastNonConfigurationInstances:0, android.app.Activity.mLoaderManager:0, android.app.Activity.mLoadersStarted:0, android.app.Activity.mMainThread:0, android.app.Activity.mManagedCursors:0, android.app.Activity.mManagedDialogs:0, android.app.Activity.mMenuInflater:0, android.app.Activity.mParent:0, android.app.Activity.mResultCode:0, android.app.Activity.mResultData:0, android.app.Activity.mResumed:0, android.app.Activity.mSearchManager:0, android.app.Activity.mStartedActivity:0, android.app.Activity.mStopped:0, android.app.Activity.mTemporaryPause:0, android.app.Activity.mTitle:0, android.app.Activity.mTitleColor:0, android.app.Activity.mTitleReady:0, android.app.Activity.mToken:0, android.app.Activity.mTranslucentCallback:0, android.app.Activity.mUiThread:0, android.app.Activity.mVisibleFromClient:0, android.app.Activity.mVisibleFromServer:0, android.app.Activity.mWindow:0, android.app.Activity.mWindowAdded:0, android.app.Activity.mWindowManager:0, android.content.ContextWrapper.mBase:0, android.support.v4.app.FragmentActivity.mAllLoaderManagers:0, android.support.v4.app.FragmentActivity.mCheckedForLoaderManager:0, android.support.v4.app.FragmentActivity.mContainer:0, android.support.v4.app.FragmentActivity.mCreated:0, android.support.v4.app.FragmentActivity.mFragments:0, android.support.v4.app.FragmentActivity.mHandler:0, android.support.v4.app.FragmentActivity.mLoaderManager:0, android.support.v4.app.FragmentActivity.mLoadersStarted:0, android.support.v4.app.FragmentActivity.mOptionsMenuInvalidated:0, android.support.v4.app.FragmentActivity.mReallyStopped:0, android.support.v4.app.FragmentActivity.mResumed:0, android.support.v4.app.FragmentActivity.mRetaining:0, android.support.v4.app.FragmentActivity.mStopped:0, android.support.v7.app.AppCompatActivity.mDelegate:0, android.view.ContextThemeWrapper.mBase:0, android.view.ContextThemeWrapper.mInflater:0, android.view.ContextThemeWrapper.mOverrideConfiguration:0, android.view.ContextThemeWrapper.mResources:0, android.view.ContextThemeWrapper.mTheme:0, android.view.ContextThemeWrapper.mThemeResource:0, material.com.materialdemo.PDPActivity.ICONS:val$5, material.com.materialdemo.PDPActivity.TITLES:val$6, material.com.materialdemo.PDPActivity.mCategoryLayoutManager:0, material.com.materialdemo.PDPActivity.toolbar:0}: ; 
+val$5|->[9|]: ; 
+val$6|->[9|]: ; 
+Bundle|->{android.os.Bundle.mAllowFds:0, android.os.Bundle.mClassLoader:0, android.os.Bundle.mFdsKnown:0, android.os.Bundle.mHasFds:0, android.os.Bundle.mMap:0, android.os.Bundle.mParcelledData:0}:
+Adding summary for material.com.materialdemo.PDPActivity.InferGeneratedHarness()
+  void material.com.materialdemo.PDPActivity.InferGeneratedHarness()()
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.018895 s TIMEOUT:N SYMOPS:38 CALLS:0,4
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited: 1 2 3 4 5 6 7 8 9 10] ---------------------------
+  PRE:
+  PDPActivity = val$1: ; 
+  Bundle = val$2:
+  POST 1 of 1:
+  MEMna<PDPActivity.<init>():5>(val$6) ;  MEMna<PDPActivity.<init>():5>(val$5) ;
+  return = val$3: ; 
+  PDPActivity = val$1: ; 
+  PDPActivity = val$4: ; 
+  Bundle = val$2: ; 
+  Bundle = val$7: ;
+  PDPActivity|->{android.app.Activity.mActionBar:0, android.app.Activity.mActivityInfo:0, android.app.Activity.mAllLoaderManagers:0, android.app.Activity.mApplication:0, android.app.Activity.mCalled:0, android.app.Activity.mChangeCanvasToTranslucent:0, android.app.Activity.mChangingConfigurations:0, android.app.Activity.mCheckedForLoaderManager:0, android.app.Activity.mComponent:0, android.app.Activity.mConfigChangeFlags:0, android.app.Activity.mContainer:0, android.app.Activity.mCurrentConfig:0, android.app.Activity.mDecor:0, android.app.Activity.mDefaultKeyMode:0, android.app.Activity.mDefaultKeySsb:0, android.app.Activity.mDestroyed:0, android.app.Activity.mDoReportFullyDrawn:0, android.app.Activity.mEmbeddedID:0, android.app.Activity.mEnableDefaultActionBarUp:0, android.app.Activity.mFinished:0, android.app.Activity.mFragments:0, android.app.Activity.mHandler:0, android.app.Activity.mIdent:0, android.app.Activity.mInstanceTracker:0, android.app.Activity.mInstrumentation:0, android.app.Activity.mIntent:0, android.app.Activity.mLastNonConfigurationInstances:0, android.app.Activity.mLoaderManager:0, android.app.Activity.mLoadersStarted:0, android.app.Activity.mMainThread:0, android.app.Activity.mManagedCursors:0, android.app.Activity.mManagedDialogs:0, android.app.Activity.mMenuInflater:0, android.app.Activity.mParent:0, android.app.Activity.mResultCode:0, android.app.Activity.mResultData:0, android.app.Activity.mResumed:0, android.app.Activity.mSearchManager:0, android.app.Activity.mStartedActivity:0, android.app.Activity.mStopped:0, android.app.Activity.mTemporaryPause:0, android.app.Activity.mTitle:0, android.app.Activity.mTitleColor:0, android.app.Activity.mTitleReady:0, android.app.Activity.mToken:0, android.app.Activity.mTranslucentCallback:0, android.app.Activity.mUiThread:0, android.app.Activity.mVisibleFromClient:0, android.app.Activity.mVisibleFromServer:0, android.app.Activity.mWindow:0, android.app.Activity.mWindowAdded:0, android.app.Activity.mWindowManager:0, android.content.ContextWrapper.mBase:0, android.support.v4.app.FragmentActivity.mAllLoaderManagers:0, android.support.v4.app.FragmentActivity.mCheckedForLoaderManager:0, android.support.v4.app.FragmentActivity.mContainer:0, android.support.v4.app.FragmentActivity.mCreated:0, android.support.v4.app.FragmentActivity.mFragments:0, android.support.v4.app.FragmentActivity.mHandler:0, android.support.v4.app.FragmentActivity.mLoaderManager:0, android.support.v4.app.FragmentActivity.mLoadersStarted:0, android.support.v4.app.FragmentActivity.mOptionsMenuInvalidated:0, android.support.v4.app.FragmentActivity.mReallyStopped:0, android.support.v4.app.FragmentActivity.mResumed:0, android.support.v4.app.FragmentActivity.mRetaining:0, android.support.v4.app.FragmentActivity.mStopped:0, android.support.v7.app.AppCompatActivity.mDelegate:0, android.view.ContextThemeWrapper.mBase:0, android.view.ContextThemeWrapper.mInflater:0, android.view.ContextThemeWrapper.mOverrideConfiguration:0, android.view.ContextThemeWrapper.mResources:0, android.view.ContextThemeWrapper.mTheme:0, android.view.ContextThemeWrapper.mThemeResource:0, material.com.materialdemo.PDPActivity.ICONS:val$5, material.com.materialdemo.PDPActivity.TITLES:val$6, material.com.materialdemo.PDPActivity.mCategoryLayoutManager:0, material.com.materialdemo.PDPActivity.toolbar:0}: ; 
+  val$5|->[9|]: ; 
+  val$6|->[9|]: ; 
+  Bundle|->{android.os.Bundle.mAllowFds:0, android.os.Bundle.mClassLoader:0, android.os.Bundle.mFdsKnown:0, android.os.Bundle.mHasFds:0, android.os.Bundle.mMap:0, android.os.Bundle.mParcelledData:0}:
+  ----------------------------------------------------------------
+  
+
+#### Start: Footprint Computation for void BuildConfig.<clinit>() ####
+#### [FUNCTION void BuildConfig.<clinit>()] ... OK #####
+#### Finished: Footprint Computation for void BuildConfig.<clinit>() (6 nodes containing 5 states) ####
+#### [FUNCTION void BuildConfig.<clinit>()] Footprint Analysis result ####
+PROP 1:[path: linear paths: -1. max length: -1 has repetitions: 1 of node 1
+n1(s1).n7(s2).n8(s3).n9(s4).n2]
+UND<boolean Boolean.parseBoolean(String)>:7(@f$0) ;
+return = _t$0: ; 
+#GB$material.com.materialdemo.BuildConfig = {material.com.materialdemo.BuildConfig.DEBUG:@f$0}: ; 
+old_field = @f$1:
+[footprint
+   #GB$material.com.materialdemo.BuildConfig = {material.com.materialdemo.BuildConfig.DEBUG:@f$2}: ; 
+   field = @f$1: ; 
+   $RET_java.lang.Boolean.parseBoolean(java.lang.String):boolean|abductedRetvar = @f$0:  ]
+
+Specs changed: added new pre
+#GB$material.com.materialdemo.BuildConfig = {material.com.materialdemo.BuildConfig.DEBUG:val$1}: ; 
+field = val$2: ; 
+$RET_java.lang.Boolean.parseBoolean(java.lang.String):boolean|abductedRetvar = val$3:
+Adding summary for void BuildConfig.<clinit>()
+  class java.lang.Object *void BuildConfig.<clinit>()(class java.lang.String *field)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: FOOTRPRINT
+  Dependency_map: 
+  TIME:0.000860 s TIMEOUT:N SYMOPS:21 CALLS:0,1
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited: 7] ---------------------------
+  PRE:
+  #GB$material.com.materialdemo.BuildConfig = {material.com.materialdemo.BuildConfig.DEBUG:val$1}: ; 
+  field = val$2: ; 
+  $RET_java.lang.Boolean.parseBoolean(java.lang.String):boolean|abductedRetvar = val$3:
+  POST 1 of 1:
+  UND<boolean Boolean.parseBoolean(String)>:7($RET_java.lang.Boolean.parseBoolean(java.lang.String):boolean|abductedRetvar) ;
+  return = val$4: ; 
+  #GB$material.com.materialdemo.BuildConfig = {material.com.materialdemo.BuildConfig.DEBUG:$RET_java.lang.Boolean.parseBoolean(java.lang.String):boolean|abductedRetvar}: ; 
+  field = val$2:
+  ----------------------------------------------------------------
+  
+Transition void BuildConfig.<clinit>() from footprint to re-exe
+Adding summary for void BuildConfig.<clinit>()
+  class java.lang.Object *void BuildConfig.<clinit>()(class java.lang.String *field)
+  Timestamp: 0
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.000860 s TIMEOUT:N SYMOPS:21 CALLS:0,1
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited:] ---------------------------
+  PRE:
+  #GB$material.com.materialdemo.BuildConfig = {material.com.materialdemo.BuildConfig.DEBUG:val$1}: ; 
+  field = val$2: ; 
+  $RET_java.lang.Boolean.parseBoolean(java.lang.String):boolean|abductedRetvar = val$3:
+  
+  ----------------------------------------------------------------
+  
+
+#### Start: Re-Execution for void BuildConfig.<clinit>() ####
+Finished re-execution for precondition 1 (6 nodes containing 5 states) (pass)
+#### [FUNCTION void BuildConfig.<clinit>()] ... OK #####
+#### Finished: Re-Execution for void BuildConfig.<clinit>() ####
+
+
+================================================
+ *** CANDIDATE PRECONDITIONS FOR void BuildConfig.<clinit>(): 
+================================================
+
+PROP 1:
+#GB$material.com.materialdemo.BuildConfig = {material.com.materialdemo.BuildConfig.DEBUG:val$1}: ; 
+field = val$2: ; 
+$RET_java.lang.Boolean.parseBoolean(java.lang.String):boolean|abductedRetvar = val$3: 
+
+
+
+================================================
+ *** VALID PRECONDITIONS FOR void BuildConfig.<clinit>(): 
+================================================
+
+PROP 1:
+#GB$material.com.materialdemo.BuildConfig = {material.com.materialdemo.BuildConfig.DEBUG:val$1}: ; 
+field = val$2: 
+
+Specs changed: removing pre of spec
+--------------------------- ---------- ---------------------------
+PRE:
+#GB$material.com.materialdemo.BuildConfig = {material.com.materialdemo.BuildConfig.DEBUG:val$1}: ; 
+field = val$2: ; 
+$RET_java.lang.Boolean.parseBoolean(java.lang.String):boolean|abductedRetvar = val$3:
+
+----------------------------------------------------------------
+Specs changed: added new pre
+#GB$material.com.materialdemo.BuildConfig = {material.com.materialdemo.BuildConfig.DEBUG:val$1}: ; 
+field = val$2:
+Adding summary for void BuildConfig.<clinit>()
+  class java.lang.Object *void BuildConfig.<clinit>()(class java.lang.String *field)
+  Timestamp: 1
+  Status: INACTIVE
+  Phase: RE_EXECUTION
+  Dependency_map: 
+  TIME:0.001928 s TIMEOUT:N SYMOPS:42 CALLS:0,1
+  ERRORS: 
+  --------------------------- 1 of 1 [nvisited: 7] ---------------------------
+  PRE:
+  #GB$material.com.materialdemo.BuildConfig = {material.com.materialdemo.BuildConfig.DEBUG:val$1}: ; 
+  field = val$2:
+  POST 1 of 1:
+  UND<boolean Boolean.parseBoolean(String)>:7(val$4) ;
+  return = val$3: ; 
+  #GB$material.com.materialdemo.BuildConfig = {material.com.materialdemo.BuildConfig.DEBUG:val$4}: ; 
+  field = val$2:
+  ----------------------------------------------------------------
+  
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
++ FILE: /Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/generated/source/buildConfig/debug/material/com/materialdemo/BuildConfig.java  LOC: 13  VISITED: 12/14 SYMOPS: 134
++  num_procs: 4 (3 ok, 0 timeouts, 0 errors, 0 warnings, 2 infos)
++  detail procs:
++    - No Errors and No Specs: 1
++    - Some Errors and No Specs: 0
++    - No Errors and Some Specs: 3
++    - Some Errors and Some Specs: 0
++  errors: 
++  warnings: 
++  infos:  SKIP_FUNCTION:2
++  specs: 3
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Detailed errors during footprint phase:
+
+Detailed errors during re-execution phase:
+
+Detailed warnings during footprint phase:
+
+Detailed warnings during re-execution phase:
+/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/infer-out/sources/material.com.materialdemo.PMPActivity_InferGeneratedHarness.java:8: WARNING: PRECONDITION_NOT_MET in call to onCreate(...) at line 8, column 1
+Interprocedural footprint analysis terminated in 0.047078 sec

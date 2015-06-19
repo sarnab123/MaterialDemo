@@ -1,0 +1,774 @@
+loaded /Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/infer-out/captured/BuildConfig.java.DD0E
+
+Processing cluster #13/13 with 1 files and 4 procedures
+
+**Discovering specs: BuildConfig.<init>() file: /Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/generated/source/buildConfig/debug/material/com/materialdemo/BuildConfig.java
+  0/4 procedures done (92.31% total)
+  1 cores active
+
+**Verifying specs: BuildConfig.<init>() file: /Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/generated/source/buildConfig/debug/material/com/materialdemo/BuildConfig.java
+  0/4 procedures done (92.31% total)
+  1 cores active
+
+**Discovering specs: material.com.materialdemo.PMPActivity.InferGeneratedHarness() file: /Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/generated/source/buildConfig/debug/material/com/materialdemo/BuildConfig.java
+  1/4 procedures done (94.23% total)
+  1 cores active
+
+typ_get_recursive: Undefined type class java.lang.ClassLoader
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.os.Parcel
+
+typ_get_recursive: Undefined type class java.lang.ClassLoader
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.os.Parcel
+
+**Verifying specs: material.com.materialdemo.PMPActivity.InferGeneratedHarness() file: /Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/generated/source/buildConfig/debug/material/com/materialdemo/BuildConfig.java
+  1/4 procedures done (94.23% total)
+  1 cores active
+/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/infer-out/sources/material.com.materialdemo.PMPActivity_InferGeneratedHarness.java:8: WARNING: PRECONDITION_NOT_MET in call to onCreate(...) at line 8, column 1
+/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/infer-out/sources/material.com.materialdemo.PMPActivity_InferGeneratedHarness.java:20: Warning: No specs found for material.com.materialdemo.PMPActivity.InferGeneratedHarness()
+
+**Discovering specs: material.com.materialdemo.PDPActivity.InferGeneratedHarness() file: /Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/generated/source/buildConfig/debug/material/com/materialdemo/BuildConfig.java
+  2/4 procedures done (96.15% total)
+  1 cores active
+/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/infer-out/sources/material.com.materialdemo.PDPActivity_InferGeneratedHarness.java:8: WARNING: SKIP_FUNCTION void PDPActivity.onCreate(Bundle)
+
+typ_get_recursive: Undefined type class android.support.v7.app.AppCompatDelegate
+
+typ_get_recursive: Undefined type class android.support.v4.util.SimpleArrayMap
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.support.v4.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class com.android.internal.app.ActionBarImpl
+
+typ_get_recursive: Undefined type class android.content.pm.ActivityInfo
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.app.Application
+
+typ_get_recursive: Undefined type class android.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.text.SpannableStringBuilder
+
+typ_get_recursive: Undefined type class android.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.app.Instrumentation
+
+typ_get_recursive: Undefined type class android.app.Activity$NonConfigurationInstances
+
+typ_get_recursive: Undefined type class android.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class android.app.ActivityThread
+
+typ_get_recursive: Undefined type class java.util.ArrayList
+
+typ_get_recursive: Undefined type class android.util.SparseArray
+
+typ_get_recursive: Undefined type class android.os.IBinder
+
+typ_get_recursive: Undefined type class android.app.Activity$TranslucentConversionListener
+
+typ_get_recursive: Undefined type class java.lang.Thread
+
+typ_get_recursive: Undefined type class android.view.WindowManager
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.content.res.Resources$Theme
+
+typ_get_recursive: Undefined type class java.lang.ClassLoader
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.os.Parcel
+
+typ_get_recursive: Undefined type class android.support.v7.app.AppCompatDelegate
+
+typ_get_recursive: Undefined type class android.support.v4.util.SimpleArrayMap
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.support.v4.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class com.android.internal.app.ActionBarImpl
+
+typ_get_recursive: Undefined type class android.content.pm.ActivityInfo
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.app.Application
+
+typ_get_recursive: Undefined type class android.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.text.SpannableStringBuilder
+
+typ_get_recursive: Undefined type class android.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.app.Instrumentation
+
+typ_get_recursive: Undefined type class android.app.Activity$NonConfigurationInstances
+
+typ_get_recursive: Undefined type class android.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class android.app.ActivityThread
+
+typ_get_recursive: Undefined type class java.util.ArrayList
+
+typ_get_recursive: Undefined type class android.util.SparseArray
+
+typ_get_recursive: Undefined type class android.os.IBinder
+
+typ_get_recursive: Undefined type class android.app.Activity$TranslucentConversionListener
+
+typ_get_recursive: Undefined type class java.lang.Thread
+
+typ_get_recursive: Undefined type class android.view.WindowManager
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.content.res.Resources$Theme
+
+typ_get_recursive: Undefined type class java.lang.ClassLoader
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.os.Parcel
+
+typ_get_recursive: Undefined type class android.support.v7.app.AppCompatDelegate
+
+typ_get_recursive: Undefined type class android.support.v4.util.SimpleArrayMap
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.support.v4.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class com.android.internal.app.ActionBarImpl
+
+typ_get_recursive: Undefined type class android.content.pm.ActivityInfo
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.app.Application
+
+typ_get_recursive: Undefined type class android.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.text.SpannableStringBuilder
+
+typ_get_recursive: Undefined type class android.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.app.Instrumentation
+
+typ_get_recursive: Undefined type class android.app.Activity$NonConfigurationInstances
+
+typ_get_recursive: Undefined type class android.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class android.app.ActivityThread
+
+typ_get_recursive: Undefined type class java.util.ArrayList
+
+typ_get_recursive: Undefined type class android.util.SparseArray
+
+typ_get_recursive: Undefined type class android.os.IBinder
+
+typ_get_recursive: Undefined type class android.app.Activity$TranslucentConversionListener
+
+typ_get_recursive: Undefined type class java.lang.Thread
+
+typ_get_recursive: Undefined type class android.view.WindowManager
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.content.res.Resources$Theme
+
+typ_get_recursive: Undefined type class java.lang.ClassLoader
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.os.Parcel
+
+typ_get_recursive: Undefined type class android.support.v7.app.AppCompatDelegate
+
+typ_get_recursive: Undefined type class android.support.v4.util.SimpleArrayMap
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.support.v4.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class com.android.internal.app.ActionBarImpl
+
+typ_get_recursive: Undefined type class android.content.pm.ActivityInfo
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.app.Application
+
+typ_get_recursive: Undefined type class android.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.text.SpannableStringBuilder
+
+typ_get_recursive: Undefined type class android.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.app.Instrumentation
+
+typ_get_recursive: Undefined type class android.app.Activity$NonConfigurationInstances
+
+typ_get_recursive: Undefined type class android.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class android.app.ActivityThread
+
+typ_get_recursive: Undefined type class java.util.ArrayList
+
+typ_get_recursive: Undefined type class android.util.SparseArray
+
+typ_get_recursive: Undefined type class android.os.IBinder
+
+typ_get_recursive: Undefined type class android.app.Activity$TranslucentConversionListener
+
+typ_get_recursive: Undefined type class java.lang.Thread
+
+typ_get_recursive: Undefined type class android.view.WindowManager
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.content.res.Resources$Theme
+
+typ_get_recursive: Undefined type class java.lang.ClassLoader
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.os.Parcel
+
+typ_get_recursive: Undefined type class android.support.v7.app.AppCompatDelegate
+
+typ_get_recursive: Undefined type class android.support.v4.util.SimpleArrayMap
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.support.v4.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class com.android.internal.app.ActionBarImpl
+
+typ_get_recursive: Undefined type class android.content.pm.ActivityInfo
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.app.Application
+
+typ_get_recursive: Undefined type class android.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.text.SpannableStringBuilder
+
+typ_get_recursive: Undefined type class android.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.app.Instrumentation
+
+typ_get_recursive: Undefined type class android.app.Activity$NonConfigurationInstances
+
+typ_get_recursive: Undefined type class android.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class android.app.ActivityThread
+
+typ_get_recursive: Undefined type class java.util.ArrayList
+
+typ_get_recursive: Undefined type class android.util.SparseArray
+
+typ_get_recursive: Undefined type class android.os.IBinder
+
+typ_get_recursive: Undefined type class android.app.Activity$TranslucentConversionListener
+
+typ_get_recursive: Undefined type class java.lang.Thread
+
+typ_get_recursive: Undefined type class android.view.WindowManager
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.content.res.Resources$Theme
+
+typ_get_recursive: Undefined type class java.lang.ClassLoader
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.os.Parcel
+
+typ_get_recursive: Undefined type class android.support.v7.app.AppCompatDelegate
+
+typ_get_recursive: Undefined type class android.support.v4.util.SimpleArrayMap
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.support.v4.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class com.android.internal.app.ActionBarImpl
+
+typ_get_recursive: Undefined type class android.content.pm.ActivityInfo
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.app.Application
+
+typ_get_recursive: Undefined type class android.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.text.SpannableStringBuilder
+
+typ_get_recursive: Undefined type class android.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.app.Instrumentation
+
+typ_get_recursive: Undefined type class android.app.Activity$NonConfigurationInstances
+
+typ_get_recursive: Undefined type class android.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class android.app.ActivityThread
+
+typ_get_recursive: Undefined type class java.util.ArrayList
+
+typ_get_recursive: Undefined type class android.util.SparseArray
+
+typ_get_recursive: Undefined type class android.os.IBinder
+
+typ_get_recursive: Undefined type class android.app.Activity$TranslucentConversionListener
+
+typ_get_recursive: Undefined type class java.lang.Thread
+
+typ_get_recursive: Undefined type class android.view.WindowManager
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.content.res.Resources$Theme
+
+typ_get_recursive: Undefined type class java.lang.ClassLoader
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.os.Parcel
+
+**Verifying specs: material.com.materialdemo.PDPActivity.InferGeneratedHarness() file: /Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/generated/source/buildConfig/debug/material/com/materialdemo/BuildConfig.java
+  2/4 procedures done (96.15% total)
+  1 cores active
+/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/infer-out/sources/material.com.materialdemo.PDPActivity_InferGeneratedHarness.java:8: WARNING: SKIP_FUNCTION void PDPActivity.onCreate(Bundle)
+
+typ_get_recursive: Undefined type class android.support.v7.app.AppCompatDelegate
+
+typ_get_recursive: Undefined type class android.support.v4.util.SimpleArrayMap
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.support.v4.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class com.android.internal.app.ActionBarImpl
+
+typ_get_recursive: Undefined type class android.content.pm.ActivityInfo
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.app.Application
+
+typ_get_recursive: Undefined type class android.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.text.SpannableStringBuilder
+
+typ_get_recursive: Undefined type class android.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.app.Instrumentation
+
+typ_get_recursive: Undefined type class android.app.Activity$NonConfigurationInstances
+
+typ_get_recursive: Undefined type class android.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class android.app.ActivityThread
+
+typ_get_recursive: Undefined type class java.util.ArrayList
+
+typ_get_recursive: Undefined type class android.util.SparseArray
+
+typ_get_recursive: Undefined type class android.os.IBinder
+
+typ_get_recursive: Undefined type class android.app.Activity$TranslucentConversionListener
+
+typ_get_recursive: Undefined type class java.lang.Thread
+
+typ_get_recursive: Undefined type class android.view.WindowManager
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.content.res.Resources$Theme
+
+typ_get_recursive: Undefined type class java.lang.ClassLoader
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.os.Parcel
+
+typ_get_recursive: Undefined type class android.support.v7.app.AppCompatDelegate
+
+typ_get_recursive: Undefined type class android.support.v4.util.SimpleArrayMap
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.support.v4.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class com.android.internal.app.ActionBarImpl
+
+typ_get_recursive: Undefined type class android.content.pm.ActivityInfo
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.app.Application
+
+typ_get_recursive: Undefined type class android.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.text.SpannableStringBuilder
+
+typ_get_recursive: Undefined type class android.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.app.Instrumentation
+
+typ_get_recursive: Undefined type class android.app.Activity$NonConfigurationInstances
+
+typ_get_recursive: Undefined type class android.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class android.app.ActivityThread
+
+typ_get_recursive: Undefined type class java.util.ArrayList
+
+typ_get_recursive: Undefined type class android.util.SparseArray
+
+typ_get_recursive: Undefined type class android.os.IBinder
+
+typ_get_recursive: Undefined type class android.app.Activity$TranslucentConversionListener
+
+typ_get_recursive: Undefined type class java.lang.Thread
+
+typ_get_recursive: Undefined type class android.view.WindowManager
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.content.res.Resources$Theme
+
+typ_get_recursive: Undefined type class java.lang.ClassLoader
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.os.Parcel
+
+typ_get_recursive: Undefined type class android.support.v7.app.AppCompatDelegate
+
+typ_get_recursive: Undefined type class android.support.v4.util.SimpleArrayMap
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.support.v4.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class com.android.internal.app.ActionBarImpl
+
+typ_get_recursive: Undefined type class android.content.pm.ActivityInfo
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.app.Application
+
+typ_get_recursive: Undefined type class android.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.text.SpannableStringBuilder
+
+typ_get_recursive: Undefined type class android.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.app.Instrumentation
+
+typ_get_recursive: Undefined type class android.app.Activity$NonConfigurationInstances
+
+typ_get_recursive: Undefined type class android.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class android.app.ActivityThread
+
+typ_get_recursive: Undefined type class java.util.ArrayList
+
+typ_get_recursive: Undefined type class android.util.SparseArray
+
+typ_get_recursive: Undefined type class android.os.IBinder
+
+typ_get_recursive: Undefined type class android.app.Activity$TranslucentConversionListener
+
+typ_get_recursive: Undefined type class java.lang.Thread
+
+typ_get_recursive: Undefined type class android.view.WindowManager
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.content.res.Resources$Theme
+
+typ_get_recursive: Undefined type class java.lang.ClassLoader
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.os.Parcel
+
+typ_get_recursive: Undefined type class android.support.v7.app.AppCompatDelegate
+
+typ_get_recursive: Undefined type class android.support.v4.util.SimpleArrayMap
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.support.v4.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class com.android.internal.app.ActionBarImpl
+
+typ_get_recursive: Undefined type class android.content.pm.ActivityInfo
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.app.Application
+
+typ_get_recursive: Undefined type class android.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.text.SpannableStringBuilder
+
+typ_get_recursive: Undefined type class android.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.app.Instrumentation
+
+typ_get_recursive: Undefined type class android.app.Activity$NonConfigurationInstances
+
+typ_get_recursive: Undefined type class android.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class android.app.ActivityThread
+
+typ_get_recursive: Undefined type class java.util.ArrayList
+
+typ_get_recursive: Undefined type class android.util.SparseArray
+
+typ_get_recursive: Undefined type class android.os.IBinder
+
+typ_get_recursive: Undefined type class android.app.Activity$TranslucentConversionListener
+
+typ_get_recursive: Undefined type class java.lang.Thread
+
+typ_get_recursive: Undefined type class android.view.WindowManager
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.content.res.Resources$Theme
+
+typ_get_recursive: Undefined type class java.lang.ClassLoader
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.os.Parcel
+
+typ_get_recursive: Undefined type class android.support.v7.app.AppCompatDelegate
+
+typ_get_recursive: Undefined type class android.support.v4.util.SimpleArrayMap
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.support.v4.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class com.android.internal.app.ActionBarImpl
+
+typ_get_recursive: Undefined type class android.content.pm.ActivityInfo
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.app.Application
+
+typ_get_recursive: Undefined type class android.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.text.SpannableStringBuilder
+
+typ_get_recursive: Undefined type class android.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.app.Instrumentation
+
+typ_get_recursive: Undefined type class android.app.Activity$NonConfigurationInstances
+
+typ_get_recursive: Undefined type class android.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class android.app.ActivityThread
+
+typ_get_recursive: Undefined type class java.util.ArrayList
+
+typ_get_recursive: Undefined type class android.util.SparseArray
+
+typ_get_recursive: Undefined type class android.os.IBinder
+
+typ_get_recursive: Undefined type class android.app.Activity$TranslucentConversionListener
+
+typ_get_recursive: Undefined type class java.lang.Thread
+
+typ_get_recursive: Undefined type class android.view.WindowManager
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.content.res.Resources$Theme
+
+typ_get_recursive: Undefined type class java.lang.ClassLoader
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.os.Parcel
+
+typ_get_recursive: Undefined type class android.support.v7.app.AppCompatDelegate
+
+typ_get_recursive: Undefined type class android.support.v4.util.SimpleArrayMap
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.support.v4.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.support.v4.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class com.android.internal.app.ActionBarImpl
+
+typ_get_recursive: Undefined type class android.content.pm.ActivityInfo
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.app.Application
+
+typ_get_recursive: Undefined type class android.app.FragmentContainer
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.text.SpannableStringBuilder
+
+typ_get_recursive: Undefined type class android.app.FragmentManagerImpl
+
+typ_get_recursive: Undefined type class android.os.Handler
+
+typ_get_recursive: Undefined type class android.app.Instrumentation
+
+typ_get_recursive: Undefined type class android.app.Activity$NonConfigurationInstances
+
+typ_get_recursive: Undefined type class android.app.LoaderManagerImpl
+
+typ_get_recursive: Undefined type class android.app.ActivityThread
+
+typ_get_recursive: Undefined type class java.util.ArrayList
+
+typ_get_recursive: Undefined type class android.util.SparseArray
+
+typ_get_recursive: Undefined type class android.os.IBinder
+
+typ_get_recursive: Undefined type class android.app.Activity$TranslucentConversionListener
+
+typ_get_recursive: Undefined type class java.lang.Thread
+
+typ_get_recursive: Undefined type class android.view.WindowManager
+
+typ_get_recursive: Undefined type class android.content.res.Configuration
+
+typ_get_recursive: Undefined type class android.content.res.Resources$Theme
+
+typ_get_recursive: Undefined type class java.lang.ClassLoader
+
+typ_get_recursive: Undefined type class android.util.ArrayMap
+
+typ_get_recursive: Undefined type class android.os.Parcel
+
+**Discovering specs: void BuildConfig.<clinit>() file: /Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/generated/source/buildConfig/debug/material/com/materialdemo/BuildConfig.java
+  3/4 procedures done (98.08% total)
+  1 cores active
+/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/generated/source/buildConfig/debug/material/com/materialdemo/BuildConfig.java:7: WARNING: SKIP_FUNCTION boolean Boolean.parseBoolean(String)
+
+**Verifying specs: void BuildConfig.<clinit>() file: /Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/generated/source/buildConfig/debug/material/com/materialdemo/BuildConfig.java
+  3/4 procedures done (98.08% total)
+  1 cores active
+/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/generated/source/buildConfig/debug/material/com/materialdemo/BuildConfig.java:7: WARNING: SKIP_FUNCTION boolean Boolean.parseBoolean(String)
+Analysis time: 0.045295s

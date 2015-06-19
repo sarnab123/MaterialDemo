@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/libs/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/intermediates/pre-dexed/debug/gson-2.2.4-84866e24db13dea7c4da5714d1774d8030311ef9.jar/classes.dex" />
+    </item>
+    <item
+        jar="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.0/jars/libs/internal_impl-22.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="025cb89f2896c63200ff4c2e6c467a95691d880a">
+        <dex dex="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.0-15d0e63023361a5df29606c93b90b850ca269a86.jar/classes.dex" />
+    </item>
+    <item
+        jar="/Users/global/Downloads/adt-bundle-mac-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.0/support-annotations-22.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="281bc6c58ecb3644c23fbc5ee0452019f67b4d5d">
+        <dex dex="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.0-588827ab2e624034e3037295cfd634c66f90dbd1.jar/classes.dex" />
+    </item>
+    <item
+        jar="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/intermediates/pre-dexed/debug/classes-7af55c8c9a619f91f2ee94b0e50f114c8210fd41.jar/classes.dex" />
+    </item>
+    <item
+        jar="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/intermediates/pre-dexed/debug/classes-97f1085826706cf184f8a5f317584dc3c56dfd69.jar/classes.dex" />
+    </item>
+    <item
+        jar="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/libs/android-support-v4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="605c447c20ca216b5556af9f215af5d4bba1b117">
+        <dex dex="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/intermediates/pre-dexed/debug/android-support-v4-e0e72387478e195757dec512329392a5cc40151a.jar/classes.dex" />
+    </item>
+    <item
+        jar="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/intermediates/exploded-aar/com.android.support/palette-v7/21.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b65c2fede61220ed2b6a063f11ca13160910089e">
+        <dex dex="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/intermediates/pre-dexed/debug/classes-a91630a0919fd030d9e9a7d011f974d2bac5eacf.jar/classes.dex" />
+    </item>
+    <item
+        jar="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="eeebabdfd8203f6ab639ccea4ffa1f20e1adee3a">
+        <dex dex="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/intermediates/pre-dexed/debug/classes-6556c3c1b7ff3f5e1ee5faa94c296861dba3a301.jar/classes.dex" />
+    </item>
+    <item
+        jar="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/libs/volley.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6ba28261dfc0a018ce8b1d5d06cdc5363828fed1">
+        <dex dex="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/intermediates/pre-dexed/debug/volley-d726ce02f4e3365a368c1a8e81d6ccd0987a1401.jar/classes.dex" />
+    </item>
+    <item
+        jar="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="983e2f375504bc04def18e709c35192afe92e65f">
+        <dex dex="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/intermediates/pre-dexed/debug/classes-984a7a57d88991216ac69b03a3e2d8fcfce28703.jar/classes.dex" />
+    </item>
+    <item
+        jar="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ac6948cce36f694f3eb3d73a135e298dc4b3527a">
+        <dex dex="/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/build/intermediates/pre-dexed/debug/classes-b87e4eee3debbc76a9c4014b19c796580a939fd2.jar/classes.dex" />
+    </item>
+
+</items>

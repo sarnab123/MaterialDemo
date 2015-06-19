@@ -1,0 +1,4 @@
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <changeBounds/>
+    <changeImageTransform/>
+</transitionSet><!-- From: file:/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/src/main/res/transition/change_image_transform.xml -->

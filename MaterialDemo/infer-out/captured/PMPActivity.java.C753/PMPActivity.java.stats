@@ -1,0 +1,22 @@
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
++ FILE: /Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/src/main/java/material/com/materialdemo/PMPActivity.java  LOC: 167  VISITED: 88/166 SYMOPS: 1392
++  num_procs: 15 (14 ok, 1 timeouts, 0 errors, 0 warnings, 56 infos)
++  detail procs:
++    - No Errors and No Specs: 1
++    - Some Errors and No Specs: 0
++    - No Errors and Some Specs: 14
++    - Some Errors and Some Specs: 0
++  errors: 
++  warnings: 
++  infos:  SKIP_FUNCTION:56
++  specs: 15
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Detailed errors during footprint phase:
+
+Detailed errors during re-execution phase:
+
+Detailed warnings during footprint phase:
+
+Detailed warnings during re-execution phase:

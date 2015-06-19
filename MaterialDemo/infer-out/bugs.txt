@@ -1,0 +1,3 @@
+/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/src/main/java/material/com/materialdemo/PDPActivity.java:43: error: NULL_DEREFERENCE
+   object categoryList last assigned on line 42 could be null and is dereferenced at line 43
+
