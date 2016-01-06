@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    tools:context="material.com.materialdemo.PDPPreviewActivity">
+
+    <TextView android:text="Ship it" android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/sizeSpinner"
+        android:entries="@array/sizes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingTop="16dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/colorsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:background="@android:color/holo_red_dark"
+            android:layout_margin="10dp"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:background="@android:color/black"
+            android:layout_margin="10dp"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:background="@android:color/darker_gray"
+            android:layout_margin="10dp"
+            android:layout_height="40dp" />
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation_low"
+        android:text="Add To Bag"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+</LinearLayout>

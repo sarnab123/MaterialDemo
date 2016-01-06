@@ -60,5 +60,6 @@
 
     <include
         android:id="@+id/shopping_bag"
-        layout="@layout/floating_action" />
-</FrameLayout><!-- From: file:/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/src/main/res/layout/product_details.xml -->
+        layout="@layout/floating_action"
+        />
+</FrameLayout><!-- From: file:/Users/global/Documents/New_Initiative/MaterialDemo/MaterialDemo/app/src/main/res/layout/product_details.xml -->

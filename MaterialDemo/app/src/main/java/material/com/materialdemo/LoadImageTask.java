@@ -1,16 +1,14 @@
 
 package material.com.materialdemo;
 
-import com.android.volley.RequestQueue;
-import com.android.volley.toolbox.ImageLoader;
-import com.android.volley.toolbox.NetworkImageView;
-import com.android.volley.toolbox.Volley;
-
 import android.content.Context;
 import android.text.TextUtils;
 import android.widget.ImageView;
 
-import material.com.materialdemo.BitmapLruCache;
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.ImageLoader;
+import com.android.volley.toolbox.NetworkImageView;
+import com.android.volley.toolbox.Volley;
 
 public class LoadImageTask {
 

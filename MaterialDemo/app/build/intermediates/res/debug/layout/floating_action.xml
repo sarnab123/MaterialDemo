@@ -11,5 +11,6 @@
     android:background="@drawable/oval_ripple"
     android:elevation="@dimen/elevation_low"
     android:src="@drawable/shopping_bag"
+    android:visibility="gone"
     android:stateListAnimator="@anim/button_elevation"
-     /><!-- From: file:/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/src/main/res/layout/floating_action.xml -->
+     /><!-- From: file:/Users/global/Documents/New_Initiative/MaterialDemo/MaterialDemo/app/src/main/res/layout/floating_action.xml -->

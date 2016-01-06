@@ -3,4 +3,14 @@
     <string name="app_name">Kohl\'s</string>
     <string name="openDrawer">Open Drawer</string>
     <string name="closeDrawer">Close Drawer</string>
+    <string name="title_activity_pdppreview">PDPPreviewActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="sizes">
+        <item>3XL</item>
+        <item>18"x18"</item>
+        <item>22"x22"</item>
+    </string-array>
+
 </resources>

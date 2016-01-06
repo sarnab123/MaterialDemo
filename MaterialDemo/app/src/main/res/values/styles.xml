@@ -19,10 +19,24 @@
         <item name="android:windowContentTransitions">true</item>
         <!-- specify shared element transitions -->
         <item name="android:windowSharedElementEnterTransition">
-            @transition/change_image_transform</item>
+            @transition/change_image_transform
+        </item>
         <item name="android:windowSharedElementExitTransition">
-            @transition/change_image_transform</item>
+            @transition/change_image_transform
+        </item>
         <item name="android:colorAccent">@color/theme_accent</item>
     </style>
 
+    <style name="AppCustomDialogTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowMinWidthMajor">97%</item>
+        <item name="android:windowMinWidthMinor">97%</item>
+    </style>
+
+    <style name="KohlsRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/small_ratingbar</item>
+        <item name="android:minHeight">10dp</item>
+        <item name="android:maxHeight">10dp</item>
+    </style>
 </resources>

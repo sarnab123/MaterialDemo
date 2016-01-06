@@ -60,5 +60,6 @@
 
     <include
         android:id="@+id/shopping_bag"
-        layout="@layout/floating_action" />
+        layout="@layout/floating_action"
+        />
 </FrameLayout>

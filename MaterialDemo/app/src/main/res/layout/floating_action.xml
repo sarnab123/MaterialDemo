@@ -11,5 +11,6 @@
     android:background="@drawable/oval_ripple"
     android:elevation="@dimen/elevation_low"
     android:src="@drawable/shopping_bag"
+    android:visibility="gone"
     android:stateListAnimator="@anim/button_elevation"
      />

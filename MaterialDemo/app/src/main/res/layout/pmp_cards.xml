@@ -43,6 +43,16 @@
             android:ellipsize="end"
             android:text="Original $49.50" />
 
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/previewImage"
+            android:src="@drawable/preview"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:layout_height="40dp" />
+
     </RelativeLayout>
 
 

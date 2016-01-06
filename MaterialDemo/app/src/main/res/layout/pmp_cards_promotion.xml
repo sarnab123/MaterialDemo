@@ -55,6 +55,16 @@
             android:layout_toRightOf="@id/image"
             android:ellipsize="end"
             android:text="For Final Price, Add to Bag" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/previewImage"
+            android:src="@drawable/preview"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:layout_height="40dp" />
     </RelativeLayout>
 
 

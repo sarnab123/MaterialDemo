@@ -5,7 +5,6 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup.MarginLayoutParams;
 import android.widget.FrameLayout;
-import android.widget.Toast;
 
 public class MultiTouchListener implements OnTouchListener {
 

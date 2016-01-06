@@ -4,4 +4,4 @@
     android:label="Search on Kohl's"
     android:voiceSearchMode="showVoiceSearchButton|launchRecognizer"
      />
-<!-- From: file:/Users/global/Documents/Kohls_Material_Demo_app/MaterialDemo/app/src/main/res/xml/searchable.xml -->
+<!-- From: file:/Users/global/Documents/New_Initiative/MaterialDemo/MaterialDemo/app/src/main/res/xml/searchable.xml -->

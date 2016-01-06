@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/item_image_view"
+            android:layout_width="@dimen/pmp_item_image_width_large"
+            android:layout_height="@dimen/pmp_item_image_height_large"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:transitionName="image" />
+
+        <ImageView
+            android:id="@+id/item_favorite_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|top"
+            android:padding="6dp"
+            android:src="@drawable/ic_favorite_default" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="vertical">
+
+        <material.com.materialdemo.CustomViews.GothamBookTextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:singleLine="false"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <material.com.materialdemo.CustomViews.GothamBoldTextView
+            android:id="@+id/item_sale_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:textColor="#d6001b"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <material.com.materialdemo.CustomViews.GothamBookTextView
+            android:id="@+id/item_original_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#454545"
+            android:textSize="12sp"
+            android:ellipsize="end"/>
+
+        <LinearLayout
+            android:id="@+id/id_productList_ratingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/item_original_price"
+            android:orientation="horizontal" >
+
+            <RatingBar
+                android:id="@+id/id_product_itemRatingBar"
+                style="@style/KohlsRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5" />
+
+            <material.com.materialdemo.CustomViews.GothamBookTextView
+                android:id="@+id/id_product_itemRatingCountTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:textColor="#454545"/>
+        </LinearLayout>
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/item_bogo_image"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </LinearLayout>
+</merge><!-- From: file:/Users/global/Documents/New_Initiative/MaterialDemo/MaterialDemo/app/src/main/res/layout/view_pmp_item.xml -->

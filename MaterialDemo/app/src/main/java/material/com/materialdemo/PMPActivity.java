@@ -1,18 +1,20 @@
 package material.com.materialdemo;
 
+import android.animation.Animator;
 import android.app.SearchManager;
 import android.content.Context;
-import android.content.res.AssetManager;
+import android.content.Intent;
+import android.graphics.Point;
 import android.os.Bundle;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
+import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -21,19 +23,20 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.IOException;
-import java.io.InputStream;
+import material.com.materialdemo.PMP.PMPFragment;
 
-public class PMPActivity extends ActionBarActivity {
+public class PMPActivity extends AppCompatActivity {
 
-    private PMPListAdapter mAdapter;
-    private LinearLayoutManager mLayoutManager, mCategoryLayoutManager;
+    private LinearLayoutManager mCategoryLayoutManager;
     private Toolbar toolbar;
     private MenuItem mMenuItemSearch;
     private RecyclerView pmpList;
     private SearchView mSearchView;
     String TITLES[] = {"Home", "Shop by Category", "Wallet", "YES2YOU Rewards", "Account", "Lists", "Registries", "Deals & Coupos", "Store Locator"};
     int ICONS[] = {R.drawable.ic_menu, R.drawable.ic_menu, R.drawable.ic_menu, R.drawable.ic_menu, R.drawable.ic_menu, R.drawable.ic_menu, R.drawable.ic_menu, R.drawable.ic_menu, R.drawable.ic_menu};
+    private View shoppingBagView = null;
+
+    int fragmentContainer = R.id.fragment_container;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +56,8 @@ public class PMPActivity extends ActionBarActivity {
                 Toast.makeText(PMPActivity.this, "Coming soon..", Toast.LENGTH_SHORT).show();
             }
         });
+
+        shoppingBag.animate().setDuration(2000);
 
         MultiTouchListener touchListener = new MultiTouchListener(this);
         shoppingBag.setOnTouchListener(touchListener);
@@ -82,27 +87,8 @@ public class PMPActivity extends ActionBarActivity {
         Drawer.setDrawerListener(mDrawerToggle); // Drawer Listener set to the Drawer toggle
         mDrawerToggle.syncState();
 
-        pmpList = (RecyclerView) findViewById(R.id.pmp_list);
-        mLayoutManager = new LinearLayoutManager(this);
-        pmpList.setLayoutManager(mLayoutManager);
-        pmpList.setHasFixedSize(true);
-        final String pmpResponse = getPMPResponse();
-        //mAdapter = new PMPListAdapter(this, null);
-        //pmpList.setAdapter(mAdapter);
-        JSONParsingHelper helper = new JSONParsingHelper(ProductMatrixVO.class, new JSONParsingHelper.IJSONParsingListener() {
-            @Override
-            public void onParseSuccess(IValueObject valueObject) {
-                mAdapter = new PMPListAdapter(PMPActivity.this, ((ProductMatrixVO) valueObject).getPayload().getProducts());
-                pmpList.setAdapter(mAdapter);
 
-            }
-
-            @Override
-            public void onParseFailure(Error ex) {
-
-            }
-        });
-        helper.execute(pmpResponse);
+        UtilityMethods.replaceFragment(this, new PMPFragment(), fragmentContainer);
     }
 
     @Override
@@ -142,42 +128,66 @@ public class PMPActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private String getPMPResponse() {
-        AssetManager assetManager = getAssets();
-        InputStream input;
-        String text = "";
-
-        try {
-            input = assetManager.open("pmpjson");
-
-            int size = input.available();
-            byte[] buffer = new byte[size];
-            input.read(buffer);
-            input.close();
-
-            // byte buffer into a string
-            text = new String(buffer, "UTF-8");
-
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
-        Log.v("TAG", "Text File: " + text);
-        return text;
-    }
 
     public void onAddToBackClick(View shoppingBagView) {
+
+        this.shoppingBagView = shoppingBagView;
         // Get the center point of the shoppingbag icon view
-        int top = shoppingBagView.getTop()-(shoppingBagView.getHeight()/2);
+        int top = shoppingBagView.getTop() - (shoppingBagView.getHeight() / 2);
         // Find view from Recycleview which is at given position
         // Change X coordinate as per requirement/give the center coordinate of the screen
-        View v = pmpList.findChildViewUnder((shoppingBagView.getRight()+200)/2,top);
+        View v = pmpList.findChildViewUnder((shoppingBagView.getRight() + 200) / 2, top);
         // Get postion of the given view
         int position = pmpList.getChildPosition(v);
 
-        Toast.makeText(PMPActivity.this, "Item Position" + position + "\nItem Title : "+((TextView) v.findViewById(R.id.title)).getText(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(PMPActivity.this, "Item Position" + position + "\nItem Title : " + ((TextView) v.findViewById(R.id.title)).getText(), Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, PDPPreviewActivity.class);
+        startActivityForResult(intent, 0);
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        animateOnAddtoBag(shoppingBagView);
+    }
+
+    private void animateOnAddtoBag(final View shoppingBag) {
+//        shoppingBag.animate().rotationYBy(720);
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        int maxX = size.x;
+        int maxY = size.y;
+
+        final int originalPointX = (shoppingBag.getRight() + 200) / 2;
+        final int originalPointY = shoppingBag.getTop() - (shoppingBag.getHeight() / 2);
 
 
+        shoppingBag.animate().x(maxX).y(0);
+
+        shoppingBag.animate().setListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                shoppingBag.setX(originalPointX);
+                shoppingBag.setY(originalPointY);
+
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animation) {
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animator animation) {
+
+            }
+        });
     }
 }

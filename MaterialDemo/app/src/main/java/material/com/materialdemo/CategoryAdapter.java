@@ -51,7 +51,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
 
 
 
-    CategoryAdapter(String Titles[],int Icons[]){
+    public CategoryAdapter(String Titles[], int Icons[]){
         mNavTitles = Titles;
         mIcons = Icons;
     }

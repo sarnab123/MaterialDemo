@@ -18,6 +18,8 @@ import android.widget.TextView;
 
 import com.android.volley.toolbox.NetworkImageView;
 
+import material.com.materialdemo.PMP.PMPListAdapter;
+
 /**
  */
 public class PDPActivity extends ActionBarActivity {
@@ -25,7 +27,7 @@ public class PDPActivity extends ActionBarActivity {
     private Toolbar toolbar;
     private LinearLayoutManager mCategoryLayoutManager;
     String TITLES[] = {"Home","Shop by Category","Wallet","YES2YOU Rewards","Account", "Lists", "Registries", "Deals & Coupos", "Store Locator"};
-    int ICONS[] = {R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu};
+    int ICONS[] = {R.drawable.ic_menu, R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu,R.drawable.ic_menu};
 
 
     @Override

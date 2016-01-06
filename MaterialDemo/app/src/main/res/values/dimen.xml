@@ -4,4 +4,14 @@
     <dimen name="elevation_low">4dp</dimen>
     <dimen name="elevation_high">8dp</dimen>
 
+    <dimen name="pmp_item_image_width_small">150dp</dimen>
+    <dimen name="pmp_item_image_height_small">150dp</dimen>
+
+    <dimen name="pmp_item_image_width_medium">136dp</dimen>
+    <dimen name="pmp_item_image_height_medium">136dp</dimen>
+
+    <dimen name="pmp_item_image_width_large">204dp</dimen>
+    <dimen name="pmp_item_image_height_large">204dp</dimen>
+
+
 </resources>
