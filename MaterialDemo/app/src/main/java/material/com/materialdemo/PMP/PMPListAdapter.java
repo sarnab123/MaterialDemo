@@ -1,12 +1,13 @@
 package material.com.materialdemo.PMP;
 
 import android.app.Activity;
-import android.graphics.Bitmap;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import java.util.List;
 
@@ -19,15 +20,16 @@ public class PMPListAdapter extends RecyclerView.Adapter<PMPListAdapter.ViewHold
 
     private final List<ProductMatrixVO.Payload.Product> mProductsList;
 
-    public static Bitmap clickedImage = null;
-
     private PMPFragment.PMPVIEWTYPE mPmpViewType;
 
     private PMPItemListener mPmpItemListener;
 
+    private Activity mContext;
+
     public PMPListAdapter(Activity context, List<ProductMatrixVO.Payload.Product> productList, PMPFragment.PMPVIEWTYPE pmpViewType) {
         mProductsList = productList;
         mPmpViewType = pmpViewType;
+        this.mContext = context;
     }
 
     public PMPItemListener getPmpItemListener() {
@@ -61,38 +63,38 @@ public class PMPListAdapter extends RecyclerView.Adapter<PMPListAdapter.ViewHold
     @Override
     public PMPListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view;
-            view = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.pmp_card_view, parent, false);
-/*
+        view = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.pmp_card_view, parent, false);
+
 
         final ImageView image = (ImageView) view.findViewById(R.id.image);
         final TextView textview = (TextView) view.findViewById(R.id.title);
-        // set the view's size, margins, paddings and layout parameters
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                clickedImage = ((BitmapDrawable) image.getDrawable()).getBitmap();
-                Intent intent = new Intent(mContext, PDPActivity.class);
-                String url = (String) ((NetworkImageView) view.findViewById(R.id.image)).getTag();
-                intent.putExtra("url", url);
-                intent.putExtra("title", (String) textview.getTag());
-
-                // create the transition animation - the images in the layouts
-                // of both activities are defined with android:transitionName="robot"
-                ActivityOptions options = ActivityOptions
-                        .makeSceneTransitionAnimation(mContext, image, "image");0
-                // start the new activity
-                mContext.startActivity(intent, options.toBundle());
-            }
-        });
-        ImageView previewImage = (ImageView) view.findViewById(R.id.previewImage);
-        previewImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(mContext, PDPPreviewActivity.class);
-                mContext.startActivityForResult(intent, 0);
-            }
-        });*/
+//        // set the view's size, margins, paddings and layout parameters
+//        view.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                clickedImage = ((BitmapDrawable) image.getDrawable()).getBitmap();
+//                Intent intent = new Intent(mContext, PDPActivity.class);
+//                String url = (String) ((NetworkImageView) view.findViewById(R.id.image)).getTag();
+//                intent.putExtra("url", url);
+//                intent.putExtra("title", (String) textview.getTag());
+//
+//                // create the transition animation - the images in the layouts
+//                // of both activities are defined with android:transitionName="robot"
+//                ActivityOptions options = ActivityOptions
+//                        .makeSceneTransitionAnimation(mContext, image, "image");
+//                // start the new activity
+//                mContext.startActivity(intent, options.toBundle());
+//            }
+//        });
+//        ImageView previewImage = (ImageView) view.findViewById(R.id.item_image_view);
+//        previewImage.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(mContext, PDPPreviewActivity.class);
+//                mContext.startActivityForResult(intent, 0);
+//            }
+//        });
         return new ViewHolder(view);
 
     }

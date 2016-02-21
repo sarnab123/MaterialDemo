@@ -1,8 +1,11 @@
 package material.com.materialdemo.PMP;
 
+import android.app.ActivityOptions;
 import android.app.Fragment;
 import android.content.Intent;
 import android.content.res.AssetManager;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -11,18 +14,20 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import java.io.IOException;
 import java.io.InputStream;
 
 import material.com.materialdemo.IValueObject;
 import material.com.materialdemo.JSONParsingHelper;
+import material.com.materialdemo.PDPActivity;
 import material.com.materialdemo.PMP.Filter.PMPFilterActivity;
 import material.com.materialdemo.ProductMatrixVO;
 import material.com.materialdemo.R;
 
 /**
- * Created on 7/24/2015 by sanchit.gupta.
+ * Created on 7/24/2015.
  */
 public class PMPFragment extends Fragment implements View.OnClickListener, PMPItemListener {
 
@@ -37,6 +42,8 @@ public class PMPFragment extends Fragment implements View.OnClickListener, PMPIt
     private PMPVIEWTYPE pmpViewType = PMPVIEWTYPE.LIST;
 
     private ProductMatrixVO mProductMatrixVO;
+
+    public static Bitmap clickedImage;
 
     @Override
     public void onClick(View v) {
@@ -59,7 +66,20 @@ public class PMPFragment extends Fragment implements View.OnClickListener, PMPIt
     }
 
     @Override
-    public void onItemClick(String webID) {
+    public void onItemClick(ProductMatrixVO.Payload.Product product,ImageView image) {
+
+        Intent intent = new Intent(getActivity(), PDPActivity.class);
+        intent.putExtra("url", product.getImage().getUrl());
+        intent.putExtra("title", product.getProductTitle());
+
+        clickedImage = ((BitmapDrawable) image.getDrawable()).getBitmap();
+
+        // create the transition animation - the images in the layouts
+        // of both activities are defined with android:transitionName="image"
+        ActivityOptions options = ActivityOptions
+                .makeSceneTransitionAnimation(getActivity(), image, "image");
+        // start the new activity
+        startActivity(intent, options.toBundle());
 
     }
 
@@ -75,7 +95,7 @@ public class PMPFragment extends Fragment implements View.OnClickListener, PMPIt
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container,
                              Bundle savedInstanceState) {
-        mFragmentView = inflater.inflate(R.layout.fragment_pmp, null);
+        mFragmentView = inflater.inflate(R.layout.new_fragment_pmp, null);
         return mFragmentView;
     }
 

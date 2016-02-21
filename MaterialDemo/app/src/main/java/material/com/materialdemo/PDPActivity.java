@@ -18,7 +18,7 @@ import android.widget.TextView;
 
 import com.android.volley.toolbox.NetworkImageView;
 
-import material.com.materialdemo.PMP.PMPListAdapter;
+import material.com.materialdemo.PMP.PMPFragment;
 
 /**
  */
@@ -70,10 +70,12 @@ public class PDPActivity extends ActionBarActivity {
         String url = getIntent().getStringExtra("url");
         String updatedUrl = UtilityMethods.getUpdatedURL(url, 250, 250);
 
-        LoadImageTask.getInstance(this).loadImage(updatedUrl,
-                (NetworkImageView) findViewById(R.id.image), 0, 0);
+        NetworkImageView image = (NetworkImageView) findViewById(R.id.image);
 
-        colorize(PMPListAdapter.clickedImage);
+        LoadImageTask.getInstance(this).loadImage(updatedUrl,
+                image, 0, 0);
+
+        colorize(PMPFragment.clickedImage);
 
         //Set title
         String title = getIntent().getStringExtra("title");

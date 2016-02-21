@@ -1,0 +1,12 @@
+-keep class null {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+-keep class material.com.materialdemo.PMPActivity { <init>(); }
+-keep class material.com.materialdemo.PDPActivity { <init>(); }
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+-keep public class * extends java.lang.annotation.Annotation {
+    *;
+}

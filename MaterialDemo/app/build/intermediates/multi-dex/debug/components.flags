@@ -1,0 +1,34 @@
+-injars /Users/global/Documents/New_Initiative/MaterialDemo/MaterialDemo/app/build/intermediates/multi-dex/debug/allclasses.jar
+-outjars /Users/global/Documents/New_Initiative/MaterialDemo/MaterialDemo/app/build/intermediates/multi-dex/debug/componentClasses.jar
+
+-libraryjars /Users/global/Downloads/adt-bundle-mac-x86_64-20140702/sdk/build-tools/22.0.1/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontpreverify
+-dontwarn
+-printconfiguration /Users/global/Documents/New_Initiative/MaterialDemo/MaterialDemo/app/build/intermediates/multi-dex/debug/components.flags
+
+
+-keep class null {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class material.com.materialdemo.PMPActivity {
+    <init>();
+}
+
+-keep class material.com.materialdemo.PDPActivity {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}

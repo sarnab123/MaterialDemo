@@ -20,8 +20,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import material.com.materialdemo.PMP.PMPFragment;
 
@@ -46,21 +44,19 @@ public class PMPActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        final RecyclerView categoryList = (RecyclerView) findViewById(R.id.category_list);
+        setCategory();
+
         ImageView shoppingBag = (ImageView) findViewById(R.id.shopping_bag);
-
-        shoppingBag.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // TODO this code will never be called as on Touch is implemented
-                Toast.makeText(PMPActivity.this, "Coming soon..", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        shoppingBag.animate().setDuration(2000);
 
         MultiTouchListener touchListener = new MultiTouchListener(this);
         shoppingBag.setOnTouchListener(touchListener);
+
+        UtilityMethods.replaceFragment(this, new PMPFragment(), fragmentContainer);
+    }
+
+    private void setCategory() {
+
+        final RecyclerView categoryList = (RecyclerView) findViewById(R.id.category_list);
 
         categoryList.setAdapter(new CategoryAdapter(TITLES, ICONS));
         mCategoryLayoutManager = new LinearLayoutManager(this);
@@ -86,9 +82,6 @@ public class PMPActivity extends AppCompatActivity {
         }; // Drawer Toggle Object Made
         Drawer.setDrawerListener(mDrawerToggle); // Drawer Listener set to the Drawer toggle
         mDrawerToggle.syncState();
-
-
-        UtilityMethods.replaceFragment(this, new PMPFragment(), fragmentContainer);
     }
 
     @Override
@@ -133,14 +126,14 @@ public class PMPActivity extends AppCompatActivity {
 
         this.shoppingBagView = shoppingBagView;
         // Get the center point of the shoppingbag icon view
-        int top = shoppingBagView.getTop() - (shoppingBagView.getHeight() / 2);
-        // Find view from Recycleview which is at given position
-        // Change X coordinate as per requirement/give the center coordinate of the screen
-        View v = pmpList.findChildViewUnder((shoppingBagView.getRight() + 200) / 2, top);
-        // Get postion of the given view
-        int position = pmpList.getChildPosition(v);
+//        int top = shoppingBagView.getTop() - (shoppingBagView.getHeight() / 2);
+//        // Find view from Recycleview which is at given position
+//        // Change X coordinate as per requirement/give the center coordinate of the screen
+//        View v = pmpList.findChildViewUnder((shoppingBagView.getRight() + 200) / 2, top);
+//        // Get postion of the given view
+//        int position = pmpList.getChildPosition(v);
 
-        Toast.makeText(PMPActivity.this, "Item Position" + position + "\nItem Title : " + ((TextView) v.findViewById(R.id.title)).getText(), Toast.LENGTH_SHORT).show();
+//        Toast.makeText(PMPActivity.this, "Item Position" + position + "\nItem Title : " + ((TextView) v.findViewById(R.id.title)).getText(), Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, PDPPreviewActivity.class);
         startActivityForResult(intent, 0);
 
@@ -153,7 +146,6 @@ public class PMPActivity extends AppCompatActivity {
     }
 
     private void animateOnAddtoBag(final View shoppingBag) {
-//        shoppingBag.animate().rotationYBy(720);
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
         display.getSize(size);

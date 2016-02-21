@@ -128,7 +128,7 @@ public class PMPItemView extends LinearLayout {
             @Override
             public void onClick(View v) {
                 if (mPmpItemListener != null) {
-                    mPmpItemListener.onItemClick(product.getWebID());
+                    mPmpItemListener.onItemClick(product,mImage);
                 }
             }
         });

@@ -34,9 +34,6 @@
         <activity
             android:name="material.com.materialdemo.PDPActivity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name="android.support.v7.widget.TestActivity"
-            android:label="RecyclerViewTestActivity" />
     </application>
 
 </manifest>

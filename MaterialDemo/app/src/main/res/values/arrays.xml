@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_items">
+        <item>Home</item>
+        <item>Shop by Category</item>
+        <item>Wallet</item>
+        <item>YES2YOU Rewards</item>
+        <item>Account</item>
+        <item>Lists</item>
+        <item>Registries</item>
+        <item>Deals and Coupons</item>
+        <item>Store Locator</item>
+    </string-array>
+</resources>
